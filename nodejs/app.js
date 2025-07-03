@@ -5,9 +5,9 @@ const port = process.env.PORT;
 const version = process.env.VERSION;
 
 const server = http.createServer((req, res) => {
-  res.statusCode = 500;
+  res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
+  res.end('Hello World 2');
 });
 
 server.listen(port, hostname, () => {
